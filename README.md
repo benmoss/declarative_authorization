@@ -98,6 +98,7 @@ are given in the following.  E.g. the privilege index users is required for
 action index.  This works as a first default configuration for RESTful
 controllers, with these privileges easily handled in the authorization
 configuration, which will be described below.
+
 ```ruby
 class EmployeesController < ApplicationController
   filter_access_to :all
