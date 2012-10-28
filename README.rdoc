@@ -98,14 +98,15 @@ are given in the following.  E.g. the privilege index users is required for
 action index.  This works as a first default configuration for RESTful
 controllers, with these privileges easily handled in the authorization
 configuration, which will be described below.
-
-    class EmployeesController < ApplicationController
-      filter_access_to :all
-      def index
-        ...
-      end
-      ...
-    end
+```ruby
+class EmployeesController < ApplicationController
+  filter_access_to :all
+  def index
+    ...
+  end
+  ...
+end
+```
 
 When custom actions are added to such a controller, it helps to define more
 clearly which privileges are the respective requirements.  That is when the
